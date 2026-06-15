@@ -1,0 +1,27 @@
+{
+  "name": "plano-lead-saude",
+  "version": "1.0.0",
+  "description": "Site de captação e qualificação de leads para corretores de planos de saúde.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "leads",
+    "plano-de-saude",
+    "corretores",
+    "whatsapp",
+    "crm"
+  ],
+  "author": "Projeto gerado por ChatGPT",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "uuid": "^11.0.3"
+  }
+}

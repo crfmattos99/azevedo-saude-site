@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Azevedo Saúde | Cotação de Planos de Saúde</title>
+  <meta name="description" content="Cote planos de saúde individual, familiar, empresarial, MEI ou odontológico com a Azevedo Saúde. Atendimento pelo WhatsApp e suporte consultivo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="top-strip azevedo-strip">
+    <span>Planos de saúde sob medida</span>
+    <strong>WhatsApp: (21) 98151-5646</strong>
+    <a href="https://www.instagram.com/azevedosaude/" target="_blank" rel="noopener">Instagram: @azevedosaude</a>
+  </div>
+
+  <header class="site-header azevedo-header">
+    <a class="brand brand-image" href="/" aria-label="Azevedo Saúde">
+      <img src="/assets/logo-azevedo-saude.png" alt="Azevedo Saúde" />
+    </a>
+
+    <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menu">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#planos">Planos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#simulador">Cotação</a>
+      <a href="#depoimentos">Clientes</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="https://www.instagram.com/azevedosaude/" target="_blank" rel="noopener">Instagram</a>
+      <a class="nav-cta whatsapp-cta" id="heroWhatsapp" href="#">Falar no WhatsApp</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero azevedo-hero" id="inicio">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="pulse-dot"></span>
+          Atendimento humanizado e cotação gratuita
+        </div>
+        <h1>O plano de saúde ideal para você e sua família.</h1>
+        <p>
+          A Azevedo Saúde ajuda você a comparar opções, entender coberturas e receber orientação para escolher um plano com mais segurança.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#simulador">Receber cotação grátis</a>
+          <a class="btn btn-secondary" id="heroWhatsapp2" href="#">Falar com especialista</a>
+        </div>
+        <div class="trust-row azevedo-trust-row">
+          <div>
+            <strong>Cotação rápida</strong>
+            <span>em poucos minutos</span>
+          </div>
+          <div>
+            <strong>Sem compromisso</strong>
+            <span>você compara antes</span>
+          </div>
+          <div>
+            <strong>Dados protegidos</strong>
+            <span>LGPD e segurança</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual image-hero">
+        <div class="family-photo-card">
+          <img src="/assets/hero-familia.png" alt="Família sorrindo representando cuidado com a saúde" />
+          <div class="photo-badge">
+            <strong>Azevedo Saúde</strong>
+            <span>Mais proteção, mais qualidade de vida.</span>
+          </div>
+        </div>
+        <div class="lead-mini-card">
+          <span>Receba sua cotação</span>
+          <strong>em poucos segundos</strong>
+          <div class="mini-fields">
+            <i>Tipo de plano</i>
+            <i>Nome completo</i>
+            <i>WhatsApp</i>
+          </div>
+          <a href="#simulador" class="btn btn-primary">Quero cotar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos-strip operator-strip">
+      <span>Atendimento para:</span>
+      <strong>Individual/Familiar</strong>
+      <strong>Empresarial</strong>
+      <strong>MEI</strong>
+      <strong>Odontológico</strong>
+      <strong>Troca de plano</strong>
+    </section>
+
+    <section class="section visual-section" id="planos">
+      <div class="section-heading">
+        <span>Soluções Azevedo Saúde</span>
+        <h2>Escolha o tipo de plano que combina com seu momento</h2>
+        <p>Uma experiência simples, bonita e objetiva para transformar visitantes em oportunidades reais de atendimento.</p>
+      </div>
+
+      <div class="cards-grid four plan-cards">
+        <article class="info-card plan-card">
+          <div class="plan-image"><img src="/assets/saude-card-1.png" alt="Plano individual e familiar" /></div>
+          <div class="icon-box">👨‍👩‍👧</div>
+          <h3>Individual ou Familiar</h3>
+          <p>Cotação para uma pessoa, casal ou família com dependentes.</p>
+          <a href="#simulador" data-plan="Individual ou Familiar" class="inline-link plan-shortcut">Cotar familiar</a>
+        </article>
+
+        <article class="info-card plan-card featured-card">
+          <div class="plan-image"><img src="/assets/saude-card-2.png" alt="Plano empresarial" /></div>
+          <div class="icon-box">🏢</div>
+          <h3>Empresarial</h3>
+          <p>Opções para empresas com funcionários, dependentes e gestão de benefícios.</p>
+          <a href="#simulador" data-plan="Empresarial" class="inline-link plan-shortcut">Cotar empresa</a>
+        </article>
+
+        <article class="info-card plan-card">
+          <div class="plan-image"><img src="/assets/saude-card-3.png" alt="Plano para MEI" /></div>
+          <div class="icon-box">💼</div>
+          <h3>MEI</h3>
+          <p>Alternativas para microempreendedores que desejam contratar com CNPJ.</p>
+          <a href="#simulador" data-plan="MEI" class="inline-link plan-shortcut">Cotar MEI</a>
+        </article>
+
+        <article class="info-card plan-card">
+          <div class="plan-image dental-visual"><span>🦷</span></div>
+          <div class="icon-box">🦷</div>
+          <h3>Odontológico</h3>
+          <p>Planos odontológicos para pessoa física, família ou empresa.</p>
+          <a href="#simulador" data-plan="Odontológico" class="inline-link plan-shortcut">Cotar odonto</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split soft-split" id="como-funciona">
+      <div class="section-heading left">
+        <span>Como funciona</span>
+        <h2>Você informa, a Azevedo Saúde orienta e o atendimento começa pelo WhatsApp</h2>
+        <p>
+          O formulário organiza seu perfil antes do contato: tipo de plano, quantidade de vidas, cidade, prazo e orçamento. Assim o atendimento fica mais rápido e personalizado.
+        </p>
+        <div class="contact-card">
+          <strong>Fale agora</strong>
+          <span>(21) 98151-5646</span>
+          <a href="https://www.instagram.com/azevedosaude/" target="_blank" rel="noopener">@azevedosaude</a>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>01</strong>
+          <div>
+            <h3>Você responde o simulador</h3>
+            <p>Perguntas curtas, visual agradável e barra de progresso.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <strong>02</strong>
+          <div>
+            <h3>Seu perfil é organizado</h3>
+            <p>As respostas ajudam o consultor a entender o plano ideal para sua realidade.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <strong>03</strong>
+          <div>
+            <h3>Você recebe atendimento</h3>
+            <p>A Azevedo Saúde entra em contato pelo WhatsApp para orientar sua cotação.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <strong>04</strong>
+          <div>
+            <h3>Você compara com calma</h3>
+            <p>Compare opções, coberturas e valores antes de avançar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="simulator-section azevedo-simulator" id="simulador">
+      <div class="simulator-shell">
+        <div class="simulator-copy">
+          <span class="badge">Cotação gratuita</span>
+          <h2>Simule seu plano de saúde agora</h2>
+          <p>Responda as perguntas abaixo para receber um atendimento mais preciso da Azevedo Saúde.</p>
+          <ul class="benefit-list">
+            <li>Atendimento pelo WhatsApp</li>
+            <li>Comparação de opções disponíveis</li>
+            <li>Orientação para você, família ou empresa</li>
+          </ul>
+        </div>
+
+        <form class="lead-form" id="leadForm">
+          <div class="form-progress">
+            <div class="progress-text">
+              <strong id="stepText">Etapa 1 de 9</strong>
+              <span id="progressPercent">11%</span>
+            </div>
+            <div class="progress-track"><span id="progressBar"></span></div>
+          </div>
+
+          <div class="form-step active" data-step="1">
+            <h3>Qual tipo de plano você procura?</h3>
+            <div class="option-grid">
+              <label><input type="radio" name="planType" value="Individual ou Familiar" required><span>Individual ou Familiar</span></label>
+              <label><input type="radio" name="planType" value="Empresarial"><span>Empresarial</span></label>
+              <label><input type="radio" name="planType" value="MEI"><span>MEI</span></label>
+              <label><input type="radio" name="planType" value="Coletivo por adesão"><span>Coletivo por adesão</span></label>
+              <label><input type="radio" name="planType" value="Odontológico"><span>Odontológico</span></label>
+              <label><input type="radio" name="planType" value="Ainda não sei"><span>Ainda não sei</span></label>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="2">
+            <h3>Para quem seria o plano?</h3>
+            <div class="option-grid">
+              <label><input type="radio" name="audience" value="Só para mim" required><span>Só para mim</span></label>
+              <label><input type="radio" name="audience" value="Para mim e minha família"><span>Para mim e minha família</span></label>
+              <label><input type="radio" name="audience" value="Para funcionários da empresa"><span>Para funcionários da empresa</span></label>
+              <label><input type="radio" name="audience" value="Para dependentes"><span>Para dependentes</span></label>
+              <label><input type="radio" name="audience" value="Outro"><span>Outro</span></label>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="3">
+            <h3>Quantas vidas deseja incluir?</h3>
+            <div class="option-grid">
+              <label><input type="radio" name="lives" value="1 vida" required><span>1 vida</span></label>
+              <label><input type="radio" name="lives" value="2 vidas"><span>2 vidas</span></label>
+              <label><input type="radio" name="lives" value="3 a 5 vidas"><span>3 a 5 vidas</span></label>
+              <label><input type="radio" name="lives" value="6 a 10 vidas"><span>6 a 10 vidas</span></label>
+              <label><input type="radio" name="lives" value="Mais de 10 vidas"><span>Mais de 10 vidas</span></label>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="4">
+            <h3>Qual sua cidade e estado?</h3>
+            <label class="field-label">Cidade/UF</label>
+            <input class="text-input" type="text" name="city" placeholder="Ex: Rio de Janeiro/RJ" required />
+            <small class="hint">A cidade ajuda o corretor a filtrar redes e opções disponíveis.</small>
+          </div>
+
+          <div class="form-step" data-step="5">
+            <h3>Você já possui plano de saúde?</h3>
+            <div class="option-grid">
+              <label><input type="radio" name="hasPlan" value="Sim, quero trocar" required><span>Sim, quero trocar</span></label>
+              <label><input type="radio" name="hasPlan" value="Não, quero contratar"><span>Não, quero contratar</span></label>
+              <label><input type="radio" name="hasPlan" value="Tenho plano empresarial"><span>Tenho plano empresarial</span></label>
+              <label><input type="radio" name="hasPlan" value="Tenho plano individual"><span>Tenho plano individual</span></label>
+              <label><input type="radio" name="hasPlan" value="Não sei informar"><span>Não sei informar</span></label>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="6">
+            <h3>Qual faixa de investimento mensal procura?</h3>
+            <div class="option-grid">
+              <label><input type="radio" name="budget" value="Até R$ 300 por pessoa" required><span>Até R$ 300 por pessoa</span></label>
+              <label><input type="radio" name="budget" value="R$ 300 a R$ 600 por pessoa"><span>R$ 300 a R$ 600 por pessoa</span></label>
+              <label><input type="radio" name="budget" value="R$ 600 a R$ 1.000 por pessoa"><span>R$ 600 a R$ 1.000 por pessoa</span></label>
+              <label><input type="radio" name="budget" value="Acima de R$ 1.000 por pessoa"><span>Acima de R$ 1.000 por pessoa</span></label>
+              <label><input type="radio" name="budget" value="Quero avaliar opções"><span>Quero avaliar opções</span></label>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="7">
+            <h3>Quando pretende contratar?</h3>
+            <div class="option-grid">
+              <label><input type="radio" name="hiringTime" value="Hoje" required><span>Hoje</span></label>
+              <label><input type="radio" name="hiringTime" value="Esta semana"><span>Esta semana</span></label>
+              <label><input type="radio" name="hiringTime" value="Este mês"><span>Este mês</span></label>
+              <label><input type="radio" name="hiringTime" value="Apenas pesquisando"><span>Apenas pesquisando</span></label>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="8">
+            <h3>Seus dados para contato</h3>
+            <div class="two-fields">
+              <div>
+                <label class="field-label">Nome completo</label>
+                <input class="text-input" type="text" name="name" placeholder="Seu nome" required />
+              </div>
+              <div>
+                <label class="field-label">WhatsApp</label>
+                <input class="text-input" type="tel" name="phone" placeholder="(21) 98151-5646" required />
+              </div>
+            </div>
+            <div class="two-fields">
+              <div>
+                <label class="field-label">E-mail</label>
+                <input class="text-input" type="email" name="email" placeholder="seuemail@email.com" />
+              </div>
+              <div>
+                <label class="field-label">Melhor horário</label>
+                <input class="text-input" type="text" name="bestTime" placeholder="Ex: após 14h" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="9">
+            <h3>Últimos detalhes</h3>
+            <label class="field-label">Observação opcional</label>
+            <textarea class="text-input" name="notes" rows="4" placeholder="Ex: quero plano com boa rede hospitalar na Barra da Tijuca"></textarea>
+            <label class="consent-box">
+              <input type="checkbox" name="consent" required />
+              <span>Autorizo o contato da Azevedo Saúde para atendimento e cotação de planos de saúde, conforme a Política de Privacidade.</span>
+            </label>
+          </div>
+
+          <div class="form-error" id="formError"></div>
+
+          <div class="form-actions">
+            <button class="btn btn-secondary" type="button" id="prevBtn">Voltar</button>
+            <button class="btn btn-primary" type="button" id="nextBtn">Continuar</button>
+            <button class="btn btn-primary hidden" type="submit" id="submitBtn">Enviar cotação</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section dark-section">
+      <div class="section-heading">
+        <span>Atendimento organizado</span>
+        <h2>Seu pedido chega pronto para a equipe Azevedo Saúde</h2>
+        <p>Exemplo de como as informações ficam organizadas para agilizar o contato.</p>
+      </div>
+
+      <div class="lead-preview">
+        <div class="lead-preview-header">
+          <span class="temp hot">Prioridade Alta</span>
+          <strong>Lead de cotação</strong>
+        </div>
+        <div class="lead-preview-grid">
+          <div><span>WhatsApp</span><strong>21 98151-5646</strong></div>
+          <div><span>Tipo</span><strong>Familiar</strong></div>
+          <div><span>Vidas</span><strong>4</strong></div>
+          <div><span>Cidade</span><strong>Rio de Janeiro/RJ</strong></div>
+          <div><span>Possui plano</span><strong>Sim, quer trocar</strong></div>
+          <div><span>Prazo</span><strong>Esta semana</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="depoimentos">
+      <div class="section-heading">
+        <span>Confiança</span>
+        <h2>Atendimento simples, humano e direto</h2>
+      </div>
+      <div class="cards-grid three">
+        <article class="info-card testimonial-card"><strong>★★★★★</strong><p>“Atendimento rápido e muito claro. Consegui entender as opções antes de decidir.”</p><span>Cliente familiar</span></article>
+        <article class="info-card testimonial-card"><strong>★★★★★</strong><p>“A cotação para minha empresa ficou organizada e o contato foi pelo WhatsApp.”</p><span>Cliente empresarial</span></article>
+        <article class="info-card testimonial-card"><strong>★★★★★</strong><p>“Gostei da explicação sobre carência, rede e valores. Tudo bem objetivo.”</p><span>Cliente individual</span></article>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-heading">
+        <span>Perguntas frequentes</span>
+        <h2>Dúvidas comuns antes da cotação</h2>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>O atendimento é gratuito?</summary>
+          <p>Sim. O preenchimento do formulário e o primeiro atendimento comercial não têm custo.</p>
+        </details>
+        <details>
+          <summary>O site vende planos diretamente?</summary>
+          <p>Não. O site organiza sua solicitação e direciona para atendimento especializado da Azevedo Saúde.</p>
+        </details>
+        <details>
+          <summary>Posso trocar meu plano atual?</summary>
+          <p>Sim. Existe uma etapa específica para informar que você já possui plano e deseja avaliar troca.</p>
+        </details>
+        <details>
+          <summary>Meus dados ficam protegidos?</summary>
+          <p>O formulário exige consentimento e os dados são usados para atendimento e cotação de planos de saúde.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <h2>Pronto para receber sua cotação?</h2>
+      <p>Responda o simulador ou fale direto pelo WhatsApp da Azevedo Saúde.</p>
+      <div class="hero-actions center-actions">
+        <a class="btn btn-primary" href="#simulador">Começar agora</a>
+        <a class="btn btn-secondary" id="finalWhatsapp" href="#">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer azevedo-footer">
+    <div>
+      <a class="brand brand-image" href="/" aria-label="Azevedo Saúde - início">
+      <img src="/assets/logo-azevedo-saude.png" alt="Azevedo Saúde" />
+    </a>
+      <p>Planos de saúde sob medida. Mais proteção, mais qualidade de vida.</p>
+    </div>
+    <div>
+      <strong>Contato</strong>
+      <a href="https://wa.me/5521981515646" target="_blank" rel="noopener">WhatsApp: (21) 98151-5646</a>
+      <a href="https://www.instagram.com/azevedosaude/" target="_blank" rel="noopener">Instagram: @azevedosaude</a>
+      <a href="/privacidade.html">Política de Privacidade</a>
+      <a href="/termos.html">Termos de Uso</a>
+      <a href="/admin.html">Painel administrativo</a>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

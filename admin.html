@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Painel do Corretor | Azevedo Saúde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="admin-page">
+  <header class="site-header">
+    <a class="brand brand-image" href="/">
+      <img src="/assets/logo-azevedo-saude.png" alt="Azevedo Saúde" />
+    </a>
+    <nav class="nav" style="display:flex;">
+      <a href="/">Site</a>
+    </nav>
+  </header>
+
+  <main class="admin-layout">
+    <div class="admin-header">
+      <div>
+        <h1>Painel do corretor</h1>
+        <p style="color: var(--muted); margin: 8px 0 0;">Acompanhe leads, temperatura, status e dados para contato.</p>
+      </div>
+      <button class="btn btn-secondary" id="logoutBtn" type="button">Sair</button>
+    </div>
+
+    <section class="admin-login" id="loginBox">
+      <div>
+        <label class="field-label">Token administrativo</label>
+        <input class="text-input" id="tokenInput" type="password" placeholder="Digite o ADMIN_TOKEN do .env" />
+      </div>
+      <button class="btn btn-primary" id="saveTokenBtn" type="button">Entrar no painel</button>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <div class="admin-filters">
+        <div>
+          <label class="field-label">Buscar</label>
+          <input class="text-input" id="searchInput" type="search" placeholder="Nome, telefone, cidade..." />
+        </div>
+        <div>
+          <label class="field-label">Temperatura</label>
+          <select class="text-input" id="temperatureFilter">
+            <option value="">Todas</option>
+            <option value="Quente">Quente</option>
+            <option value="Morno">Morno</option>
+            <option value="Frio">Frio</option>
+          </select>
+        </div>
+        <div>
+          <label class="field-label">Status</label>
+          <select class="text-input" id="statusFilter">
+            <option value="">Todos</option>
+            <option value="Novo">Novo</option>
+            <option value="Em atendimento">Em atendimento</option>
+            <option value="Cotação enviada">Cotação enviada</option>
+            <option value="Convertido">Convertido</option>
+            <option value="Perdido">Perdido</option>
+          </select>
+        </div>
+        <div>
+          <label class="field-label">Tipo</label>
+          <select class="text-input" id="planFilter">
+            <option value="">Todos</option>
+            <option value="Individual ou Familiar">Individual ou Familiar</option>
+            <option value="Empresarial">Empresarial</option>
+            <option value="MEI">MEI</option>
+            <option value="Coletivo por adesão">Coletivo por adesão</option>
+            <option value="Odontológico">Odontológico</option>
+            <option value="Ainda não sei">Ainda não sei</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" id="refreshBtn" type="button">Atualizar</button>
+      </div>
+
+      <div class="admin-summary" id="summaryCards"></div>
+
+      <div class="leads-table-wrap">
+        <table class="leads-table">
+          <thead>
+            <tr>
+              <th>Lead</th>
+              <th>Temperatura</th>
+              <th>Plano</th>
+              <th>Perfil</th>
+              <th>Origem</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="leadsBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="/admin.js"></script>
+</body>
+</html>
